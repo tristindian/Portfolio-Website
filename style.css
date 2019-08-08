@@ -1,0 +1,181 @@
+body{
+  background-color: #FFFFFF;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+.hidden{
+display:none;
+}
+
+.show{
+  display: block;
+}
+
+.flex{
+  display: flex;
+}
+
+.heading{
+  position:relative;
+  width:175px;
+  height: 40px;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 80px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 0 auto;
+  }
+
+.background1{
+  height:100vh;
+  background-image: url(matdesign.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.introduction{
+  text-align: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+}
+.arrows{
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  bottom:0;
+  left:50%;
+  margin-left: -50px;
+}
+
+.nav-main{
+  width: 100%;
+  height: 60px;
+  background-color:#1B242F;
+  border-style: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: #85FFC0;
+  z-index: 1000px;
+}
+
+.nav-main ul{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  height: 60px;
+  margin: 0;
+}
+
+.nav-main ul li{
+  list-style: none;
+  line-height: 60px;
+}
+
+.nav-main ul li a{
+  display: block;
+  height: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: lightblue;
+  padding:0 20px;
+  font-size: 20px;
+}
+.nav-main ul li :hover {
+background-color: white;
+color: black;
+}
+
+.burger{
+  display: none;
+  height: 50px;
+  width: 50px;
+  float: right;
+  padding-top: 5px;
+}
+
+.About{
+  width:100vw-100px;
+  height:100vh;
+  background-color:#f5f5f5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.text{
+  text-align: center;
+  justify-content: center;
+}
+
+.sticky{
+position: fixed;
+top: 0;
+width: 100%;
+}
+
+.magenta{
+  color:#85FFC0;
+}
+
+.hexagon {
+  position: relative;
+  width: 175px;
+  height: 101.04px;
+  background-color: #64C7CC;
+  margin: 0px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 123.74px;
+  height: 123.74px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 25.6282px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.hexagon:before {
+  top: -61.8718px;
+}
+
+.hexagon:after {
+  bottom: -61.8718px;
+}
+
+/*cover up extra shadows*/
+.hexagon span {
+  display: block;
+  position: absolute;
+  top:0px;
+  left: 0;
+  width:175px;
+  height:101.0363px;
+  z-index: 2;
+  background: inherit;
+}
+
+@media screen and (max-width: 768px){
+  .burger{
+    display: block;
+    float: right;
+  }
+
+  .nav-main ul li{
+    display: none;
+  }
+}
